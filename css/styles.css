@@ -141,6 +141,7 @@ display: block;
    padding-bottom: 32px;
    display: block;
 }
+
 .icon-envelope{
    width: 16px;
    height: 16px;
@@ -333,19 +334,43 @@ border-radius: 0px 0px 4px 4px;
    letter-spacing: 0.03em;
 }
 
-
-
 .netvork-svg{
-   margin-top: 16px ;
-height: 44px;
+   margin-top: 16px;
 }
+
+.icon-item{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+}
+.icon-item:not(:last-child){
+   margin-right: 10px;
+}
+
 .icon-link{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
    text-decoration: none;
    width: 44px;
    height: 44px;
    border-radius: 50%;
    margin-right: 10px;
+   border: none;
+   border-radius: 50%;
+   fill: #afb1b8;
+   color: #ffffff;
 }
+.icon-link:hover{
+   background: var(--background-btn-hover);
+   fill: #ffffff;
+}
+
+.icon-netvork:hover{
+   fill: currentColor;
+}
+
+
 .icon-link:last-child{
    margin-right: 0;
 }
@@ -354,9 +379,9 @@ height: 44px;
    height: 20px;
 }
 
+
 .personai-txt{
    padding-top: 30px;
-   padding-bottom: 30px;
 }
 
 
@@ -369,7 +394,55 @@ height: 44px;
 .personal-info-item:last-child{
    margin-right: 0;
 }
+/* постоянные клиенты */
+.clients{
+   color: var(--color-text);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 
+   text-align: center;
+}
+
+.list-clients{
+   display: flex;
+   margin-top: 50px;
+}
+
+.item-clients:not(:last-child){
+margin-right: 30px;
+}
+
+.link-clients{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   width: 170px;
+   height: 92px;
+
+
+   border: 1px solid #afb1b8;
+   box-sizing: border-box;
+   border-radius: 4px;
+
+   fill: #afb1b8;
+   color: #afb1b8;
+}
+.link-clients:hover{
+   border: 1px solid var(--background-btn-hover);
+   fill: #2196F3;
+   color: #2196f3;
+}
+
+.icon-clients{
+   width: 106px;
+   height: 60px;
+   padding: auto;
+   fill: currentColor;
+}
 /* подвал контактов */
 .footer {
    background-color: var(--secondary-background);
