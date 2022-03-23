@@ -440,7 +440,6 @@ margin-right: 30px;
 .icon-clients{
    width: 106px;
    height: 60px;
-   padding: auto;
    fill: currentColor;
 }
 /* подвал контактов */
@@ -452,6 +451,7 @@ margin-right: 30px;
 
 .address{
    margin-top: 20px;
+   display: flex;
 }
 
 .minor-address {
@@ -476,6 +476,65 @@ font-weight: normal;
 font-size: 14px;
 line-height: 1.2;
 letter-spacing: 0.03em;
+}
+
+
+
+.netvork-svg-minor{
+   margin-top: -40px;
+   margin-left: 70px;
+}
+
+.footer-motivation{
+   color: var(--color-text);
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 1.1;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+
+
+   color: #FFFFFF;
+   margin-bottom: 20px;
+}
+
+.icon-item-minor{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+}
+.icon-item-minor:not(:last-child){
+   margin-right: 10px;
+}
+
+.icon-link-minor{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   margin-right: 10px;
+   border: none;
+   border-radius: 50%;
+   background: rgba(255, 255, 255, 0.1);
+   fill: #ffffff;
+   color: #ffffff;
+}
+.icon-link-minor:hover{
+   background: var(--background-btn-hover);
+   fill: #ffffff;
+}
+
+.icon-netvork-minor{
+   width: 20px;
+   height: 20px;
+}
+
+.icon-netvork-minor:hover{
+   fill: currentColor;
 }
 
 /* !!!!!!!!!PORTFOLIO!!!!!!! */
@@ -528,6 +587,12 @@ margin-top: 30px;
 border: 1px solid #EEEEEE;
 box-sizing: border-box;
 }
+.info-block-item:hover{
+   background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .info-block-item:nth-child(-n + 3) {
    margin-top: 0;
    }
@@ -539,6 +604,7 @@ box-sizing: border-box;
 .info-item-btn{
    text-decoration: none;
 }
+
 .info-txt{
    margin: 20px 24px;
 }
